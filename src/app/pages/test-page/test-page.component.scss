@@ -1,0 +1,24 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:40px;
+
+    .pannel{
+        width: 20%;
+        margin-left: 40px;
+        
+
+        mat-card{
+            height: 400px;
+            mat-card-content {
+                display: grid;
+                button{
+                    margin-top:15px;
+                }
+            }
+            
+        }
+    }
+}

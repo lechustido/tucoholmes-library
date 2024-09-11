@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="pannel">
+        <mat-card appearance="outlined">
+            <mat-card-header>
+                <mat-card-title>Consola y codigo</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <button (click)="generateLocalStorage()"
+                    mat-stroked-button>Generar LocalStorage</button>
+                <button (click)="setValueToUndefined()"
+                    mat-stroked-button>Forzar
+                    error acceder escribir en undefined</button>
+                <button (click)="generateConsoleLog(0)"
+                    mat-stroked-button>Generar console.log() -> Caracola</button>
+                    <button (click)="generateConsoleLog(1)"
+                    mat-stroked-button>Generar console.log() -> Mejillón</button>
+            </mat-card-content>
+            <mat-card-footer class="example-card-footer">
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+    <div class="pannel">
+        <mat-card appearance="outlined">
+            <mat-card-header>
+                <mat-card-title>Llamadas http</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <button (click)="getBasicData()" mat-stroked-button>Obtener
+                    listado
+                    http</button>
+                <button (click)="generate400NetworkError()"
+                    mat-stroked-button>Obtener error 400</button>
+                <button (click)="generate401NetworkError()"
+                    mat-stroked-button>Obtener error 401</button>
+                <button (click)="generate500NetworkError()"
+                    mat-stroked-button>Obtener error 500</button>
+                <button (click)="generateOkPostGFcloud()"
+                    mat-stroked-button>Post login gfCloud</button>
+            </mat-card-content>
+            <mat-card-footer class="example-card-footer">
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+    <div class="pannel">
+      <mat-card appearance="outlined">
+          <mat-card-header>
+              <mat-card-title>Descargas de recursos</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+              <button (click)="getImg()" mat-stroked-button>Obtener
+                  imagen</button>
+              <button (click)="getCss()"
+                  mat-stroked-button>Obtener css</button>
+          </mat-card-content>
+          <mat-card-footer class="example-card-footer">
+          </mat-card-footer>
+      </mat-card>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="pannel">
+    <mat-card appearance="outlined">
+        <mat-card-header>
+            <mat-card-title>Panel de viaje a formulario</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <button (click)="goToForm()" mat-stroked-button>Ir a formulario</button>
+        </mat-card-content>
+        <mat-card-footer class="example-card-footer">
+        </mat-card-footer>
+    </mat-card>
+</div>
+</div>
+
+<lib-tucoholmes-library #tuco></lib-tucoholmes-library>
+<button (click)="start()">grabar storage</button>
+<button (click)="startScreen()">grabar pantalla</button>
+
+
