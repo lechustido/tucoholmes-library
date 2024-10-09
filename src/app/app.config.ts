@@ -12,7 +12,7 @@ import { environment } from '../environments/environment';
 import { IesacommonAngularRestModule } from 'iesa-common-angular-rest';
 import { provideToastr } from 'ngx-toastr';
 import { ENVIRONMENT, IesaTcCommonAngularInterceptorService } from 'iesa-tc-common-angular-interceptor-17';
-import { TucoholmesInterceptorHttp } from '../../projects/tucoholmes-library/src/lib/tucoholmes-interceptor.service.ts.service';
+import { TucoholmesInterceptorHttp } from '../../projects/tucoholmes-library/src/lib/tucoholmes-interceptor.service.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [

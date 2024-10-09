@@ -30,12 +30,15 @@ export const TucoholmesInterceptorHttp: HttpInterceptorFn = (req: HttpRequest<an
       if (event instanceof HttpResponse) {
         newCall.response = event.body;
         newCall.responseHeaders = extractResponseHeaders(event);
+        newCall.status = event.status;
         tucoService.updateHttpCall(newCall);
       }
     }),
-    catchError((err: HttpErrorResponse) => {
+    catchError((err: any) => {
       console.log(req)
-
+      newCall.status = err.status;
+      newCall.response = err.message;
+      tucoService.updateHttpCall(newCall);
       if (!tucoService) {
 
       }

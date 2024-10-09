@@ -30,6 +30,9 @@ export class TestPageComponent {
   public start():void{
     this.tucoCr.startTimmer();
   }
+  public stopRecord():void{
+    this.tucoCr.stopRecord();
+  }
 
   public startScreen():void{
     this.tucoCr.recordScreen();

@@ -9,7 +9,7 @@ export class TestPageAccessService {
   constructor(private http: HttpClient) { }
 
   public getBasicData() {
-    const url = 'https://dummy.restapiexample.com/api/v1/employees';
+    const url = 'https://cat-fact.herokuapp.com/facts/';
 
     this.http.get(url).subscribe({
       next: (data) => {
